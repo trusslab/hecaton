@@ -1,0 +1,7 @@
+fbcon_get_font
+con_font_get
+con_font_op
+do_fontx_ioctl
+vt_ioctl
+tty_ioctl
+

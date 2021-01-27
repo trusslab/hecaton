@@ -1,0 +1,3 @@
+drivers/video/fbdev/core/
+drivers/tty/vt/
+drivers/tty/

@@ -1,0 +1,3 @@
+hci_extended_inquiry_result_evt
+hci_event_packet
+hci_rx_work
