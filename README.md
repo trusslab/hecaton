@@ -8,7 +8,7 @@ We tested these instructions on a machine running Ubuntu 16.04.3 LTS running on 
 Please note that  Hecaton's workflow includes building Linux kernels several times. So, we suggest running it on a powerful machine. Otherwise, it might take several hours. 
 
 We test this instruction while we used following versions of third-party programs:
-QEMU emulator version 2.5.0
+QEMU emulator version 2.5.0, 
 GNU objdump (GNU Binutils for Debian) 2.28
 
 (*) To reproduce each Syzbot bug, you need to use the exact same kernel distribution, kernel config, kernel commit, compiler version, and userspace image as the ones used by the Syzbot instance which found the bug.
@@ -177,7 +177,7 @@ source scripts/run_poc.sh bug1
 You can see that the system does not crash, and Hecaton bowknots undo the half executed functions. Without the Hecaton bowknot cleaning up the effect of half executed syscall, the buggy module (tty in case of bug1) would become nonfunctional. However, you can see Hecaton bowknots not only prevent crashing but also keep the functionality of the system. (in case of bug1 the terminal still works; you can type root and then enter in the QEMU window and see it prompt for a password, you can also still ssh to the system).
 
 ## Testing other bugs
-To test other bugs, repeat all the steps from  ** Per-bug Preparation** this time with another bug name, such as bug2; please make sure to replace bug1 for all the following instructions as well.
+To test other bugs, repeat all the steps from  **Per-bug Preparation** this time with another bug name, such as bug2; please make sure to replace bug1 for all the following instructions as well.
 
  
 
