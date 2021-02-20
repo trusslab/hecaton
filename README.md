@@ -76,6 +76,10 @@ source scripts/copy_kernels.sh original_kernels/linux-next
 cd $WD/Hecaton
 source scripts/reset_environment.sh
 ```
+Before moving to the next step, please make sure that the following list of packages and programs are installed on your system:
+```bash
+libssl-dev, build-essentials, checkinstall, zlib1g-dev, libelf-dev, flex, bison, qemu-system-x86, libncurses5, libmpfr4.
+```
 To prepare Hecaton for inserting bowknots to functions related to a bug, we use the following script:
 ```bash
 cd $WD/Hecaton
