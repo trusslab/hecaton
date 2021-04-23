@@ -1,5 +1,5 @@
 # Undo Workarounds for Kernel Bugs!
-Copyright (c) 2016-2018 University of California, Irvine. All rights reserved.
+Copyright (c) 2018-2021 University of California, Irvine. All rights reserved.
 
 Authors: Seyed Mohammadjavad Seyed Talebi and Zhihao Yao, UC Irvine; Ardalan Amiri Sani, UC Irvine; Zhiyun Qian, UC Riverside; Daniel Austin, Atlassian
 
