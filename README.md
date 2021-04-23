@@ -1,6 +1,14 @@
 # Undo Workarounds for Kernel Bugs!
+Copyright (c) 2016-2018 University of California, Irvine. All rights reserved.
+
+Authors: Seyed Mohammadjavad Seyed Talebi and Zhihao Yao, UC Irvine; Ardalan Amiri Sani, UC Irvine; Zhiyun Qian, UC Riverside; Daniel Austin, Atlassian
+
+This document is shared under the GNU Free Documentation License WITHOUT ANY WARRANTY. See https://www.gnu.org/licenses/ for details.
+_____________________________
 
 This document is a step-by-step guide on deploying Hecaton on a system, and test Undo Workarounds for Linux kernel bugs.
+Please refer to our paper for technical details: [USENIX Security paper](http://www.ics.uci.edu/~ardalan/papers/SeyedTalebi_USENIX_Security21.pdf)
+
 In this document, we show how to deploy Hecaton to insert bowknots for x86 Linux kernel bugs. 
 To illustrate the usage of Hecaton on real bugs, we included three real bugs found by the Syzbot system.  Bellow, we show how one can use Hecaton to insert undo-workarounds to these bugs.(*) 
 
@@ -183,7 +191,8 @@ You can see that the system does not crash, and Hecaton bowknots undo the half e
 ## Testing other bugs
 To test other bugs, repeat all the steps from  **Per-bug Preparation** this time with another bug name, such as bug2; please make sure to replace bug1 for all the following instructions as well.
 
- 
+ # Acknowledgments
+ The work was supported in part by NSF Awards #1953932, #1953933, #1846230, #1617481, and #1617513.
 
 
 
